@@ -1,5 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
 import { createContext, useState, useEffect } from "react";
+import testdata from "../../data/testdata.json";
+
 const CardContext = createContext();
 
 export function CardProvider({ children }) {
@@ -48,10 +50,14 @@ export function CardProvider({ children }) {
   }
 
   // Storage cards
-
   useEffect(() => {
     const data = window.localStorage.getItem("cardsStorage");
-    if (data !== null) setCards(JSON.parse(data));
+    // const data = [];
+    if (!data) {
+      setCards(JSON.parse(data));
+    } else {
+      setCards(testdata);
+    }
   }, []);
 
   useEffect(() => {

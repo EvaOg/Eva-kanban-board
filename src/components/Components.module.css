@@ -144,15 +144,20 @@ ul:hover {
   background-color: #fff;
   color: #003152;
   padding: 22px 28px;
+  border-radius: 10px;
 }
 
 .descriptionMainBlock {
   margin-bottom: 60px;
 }
 
+.descriptionForm {
+  width: 100%;
+}
+
 .descriptionBlock {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: row;
   justify-content: flex-start;
 }
@@ -173,12 +178,26 @@ h1 {
 }
 
 .descriptionIcon {
-  margin-right: 20px;
-  padding-top: 5px;
+  margin-right: 5px;
+  padding-top: 0;
+  fill: #0067a3;
+  cursor: pointer;
+}
+
+.descriptionIconP {
+  color: #0067a3;
+  cursor: pointer;
 }
 
 ::placeholder {
   border: none;
+}
+
+.descriptionMainBlock input:enabled {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  height: 30px;
+  margin-top: 0;
 }
 
 .description {
@@ -197,26 +216,6 @@ h1 {
 
 .closeIcon {
   margin-left: 95%;
-}
-
-.noteIcon {
-  margin-top: 5%;
-}
-
-.note {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: baseline;
-}
-
-.noteInput {
-  font-size: medium;
-  width: 70%;
-  background-color: #fff;
-  color: #003152;
-  border: none;
-  outline: none;
-  word-break: break-all;
 }
 
 ::placeholder {

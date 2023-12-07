@@ -24,6 +24,7 @@ function Home() {
     setComponent(["create component"]);
     setIsAddingNewCardActive(!isAddingNewCardActive);
   }
+  console.log(cards);
 
   return (
     <div className={styles.home}>

@@ -5,9 +5,8 @@ import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 
 function CardsList({ status }) {
-  const navigate = useNavigate();
-
   const { cards, deleteCardHandler } = useContext(CardContext);
+  const navigate = useNavigate();
 
   return cards
     .filter((card) => card.status === status)
@@ -15,7 +14,7 @@ function CardsList({ status }) {
       <div className={styles.card}>
         <div
           className={styles.cardText}
-          onClick={() => navigate(`/task/${card.id}`, { state: card.id })}
+          onClick={() => navigate(`/task/${card.id}`, { state: card })}
         >
           {card.header}
         </div>

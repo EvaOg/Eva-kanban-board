@@ -1,0 +1,51 @@
+[
+  {
+    "key": 1,
+    "id": 1,
+    "header": "Choose App Name",
+    "description": "This is my first task",
+    "status": "finished"
+  },
+  {
+    "key": 2,
+    "id": 2,
+    "header": "Allocate Team Members",
+    "description": "Find those who will do the actual job",
+    "status": "backlog"
+  },
+  {
+    "key": 3,
+    "id": 3,
+    "header": "Draft design in Figma",
+    "description": "Create a sketch of the app",
+    "status": "ready"
+  },
+  {
+    "key": 4,
+    "id": 4,
+    "header": "Create detailed business plan",
+    "description": "Create business plan considering cashflow, sales, costs.",
+    "status": "backlog"
+  },
+  {
+    "key": 5,
+    "id": 5,
+    "header": "Analyse market",
+    "description": "Research target audience, demand, possible pricing, competitors",
+    "status": "finished"
+  },
+  {
+    "key": 6,
+    "id": 6,
+    "header": "Write down intitial investments needed",
+    "description": "Costs of demo product, ads, rent",
+    "status": "backlog"
+  },
+  {
+    "key": 7,
+    "id": 7,
+    "header": "Contact Investors",
+    "description": "Go through the list of possible investors",
+    "status": "inProgress"
+  }
+]
