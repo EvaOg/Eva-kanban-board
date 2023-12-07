@@ -50,9 +50,10 @@ export function CardProvider({ children }) {
   }
 
   // Storage cards
+
   useEffect(() => {
     const data = window.localStorage.getItem("cardsStorage");
-    // const data = [];
+
     if (!data) {
       setCards(JSON.parse(data));
     } else {
