@@ -53,12 +53,7 @@ export function CardProvider({ children }) {
 
   useEffect(() => {
     const data = window.localStorage.getItem("cardsStorage");
-
-    if (!data) {
-      setCards(JSON.parse(data));
-    } else {
-      setCards(testdata);
-    }
+    if (data !== null) setCards(JSON.parse(data));
   }, []);
 
   useEffect(() => {
